@@ -3,11 +3,11 @@
 
 class HumanConsole
 
-	attr_accessor :marker, :name
+	attr_accessor :marker
 
 	def initialize(marker)
 		@marker = marker
-		@name = name
+		#@name = name
 
 	end
 

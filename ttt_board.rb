@@ -1,6 +1,3 @@
-require_relative 'console.rb'
-# require_relative 'sequential_console.rb'
-# require_relative 'game_board.rb'
 
 class TTT_Board 
 	
