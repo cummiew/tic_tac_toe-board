@@ -1,7 +1,9 @@
 require 'minitest/autorun'
-require_relative 'sequential_console.rb'
 
-class TestSequential < Minitest::Test
+# require_relative 'sequential_console.rb'
+# require_relative 'board'
+
+class TestSequentialConsole < Minitest::Test
  
  	def test_sequential_returns_x
  		player = SequentialConsole.new('x')

@@ -1,0 +1,42 @@
+
+
+<table>
+					 <!-- 'tr' means table redirected -->
+	<tr>			 
+		<td><%=ttt_board[0]%></td>
+		<td><%=ttt_board[1]%></td>
+		<td><%=ttt_board[2]%></td>
+	</tr>
+	<tr>
+		<td><%=ttt_board[3]%></td>
+		<td><%=ttt_board[4]%></td>
+		<td><%=ttt_board[5]%></td>
+	</tr>
+	<tr>
+		<td><%=ttt_board[6]%></td>
+		<td><%=ttt_board[7]%></td>
+		<td><%=ttt_board[8]%></td>
+	</tr>
+
+</table>
+
+<form method = 'post' action = 'ttt_board'>
+					<!-- getting a move from board. Posting for each 
+					     player to choose a play back value to move -->
+<select name = "choice">
+
+		<option value="0">0</option>
+		<option value="1">1</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+		<option value="4">4</option>
+		<option value="5">5</option>
+		<option value="6">6</option>
+		<option value="7">7</option>
+		<option value="8">8</option>
+					<!-- These are the option values players choose/select. -->
+</select>
+
+<input type='submit' value='submit'>
+
+</form>

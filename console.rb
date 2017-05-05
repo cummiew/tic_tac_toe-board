@@ -1,16 +1,14 @@
-require_relative 'board.rb'
-require_relative 'human_console.rb'
-require_relative 'sequential_console.rb'
+require_relative 'ttt_board.rb'
+# require_relative 'sequential_console.rb'
 
 class Console
-
-attr_accessor :player_1, :player_2, :board, :current_player
+attr_accessor :player_1, :player_2, :ttt_board, :current_player
 	
 	def initialize(player_1, player_2)
 
 		@player_1 = player_1
 		@player_2 = player_2
-		@board = Board.new
+		@board = TTT_Board.new
 		@current_player = player_1
 
 	end
@@ -55,11 +53,11 @@ attr_accessor :player_1, :player_2, :board, :current_player
 
 
 	def game_tie?
-		board.full_board?
+		board.full_board?(current_player.marker)
 	end
 
 
-	def game_over?()
+	def game_over?
 		board.board_over?(current_player.marker)	
 	end
 end
